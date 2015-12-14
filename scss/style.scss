@@ -322,3 +322,28 @@ footer {
 		color: $grey;
 	}
 }	
+
+.toosmall {
+	opacity: 0;
+	position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        display: none;
+    }
+
+    .toosmall {
+        padding: 0 20vw; 
+        width: 100%;
+        font-size: 20px;
+        opacity: 1;
+        color: $grey;
+        position: relative;
+        margin: 40vh auto 0 auto;
+        text-align: center;
+        line-height: 150%;
+
+    }
+}
+
